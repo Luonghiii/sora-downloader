@@ -1,3 +1,7 @@
+好的，已为您添加推荐项目部分。
+
+---
+
 # Sora 视频无水印链接提取器 (Sora Video Downloader Web UI)  
   
 这是一个简单易用的 Web 项目，用于从 Sora 分享链接中提取无水印的原始视频下载链接。项目通过 Docker 进行部署，配置简单，支持设置代理和可选的访问令牌保护。  
@@ -150,7 +154,11 @@ docker run -d -p 5000:8000 \
 | `OPENAI_ACCESS_TOKEN` | **是**   | 用于向 OpenAI 后端 API 发出请求的授权令牌，需从手机 App 获取。                                      | `eyjhbxxxxxxxxxxxxxxxxxx`          |  
 | `APP_ACCESS_TOKEN`    | 否       | 用于保护此 Web 服务的访问令牌。如果设置，前端页面会要求输入此令牌。                               | `my-super-secret-password`         |  
 | `HTTP_PROXY`          | 否       | 用于请求 OpenAI API 的 HTTP/HTTPS 代理。如果你的服务器网络受限，则需要此项。                        | `http://127.0.0.1:7890`            |  
-  
+
+## 🌟 推荐项目
+
+-   **[sora2api](https://github.com/TheSmallHanCat/sora2api)**: 一个免费、非官方、逆向工程的 Sora API 项目。已与本项目接口适配，可在去水印配置中选择自定义解析接口，填入本项目地址。
+
 ## 📄 免責聲明  
   
 -   本项目仅供技术学习和个人研究使用。  
