@@ -62,7 +62,7 @@
 
 4.  **捕获并复制 Token：**
     *   在电脑端的 `Reqable` 中启动抓包。
-    *   在手机上打开 Sora App 并进行任意操作（例如，刷新对话）。
+    *   在手机上打开 Sora App 并进行任意操作（例如，刷新视频）。
     *   在 `Reqable` 的请求列表中，找到发往 `sora.chatgpt.com` 的 API 请求。
     *   点击该请求，查看其 **请求标头 (Request Headers)**。
     *   找到 `Authorization` 字段，其值的格式为 `Bearer eyxxxxxxxx...`。
@@ -92,7 +92,7 @@ docker build -t sora-downloader .
 ```bash
 docker run -d -p 5000:8000 \
   -e OPENAI_ACCESS_TOKEN="粘贴你获取的Token" \
-  --name my-sora-app \
+  --name sora-downloader \
   sora-downloader
 ```
 
@@ -104,7 +104,7 @@ docker run -d -p 5000:8000 \
 docker run -d -p 5000:8000 \
   -e OPENAI_ACCESS_TOKEN="粘贴你获取的Token" \
   -e APP_ACCESS_TOKEN="设置一个你自己的访问密码" \
-  --name my-sora-app \
+  --name sora-downloader \
   sora-downloader
 ```
 
@@ -117,7 +117,7 @@ docker run -d -p 5000:8000 \
   -e OPENAI_ACCESS_TOKEN="粘贴你获取的Token" \
   -e APP_ACCESS_TOKEN="设置一个你自己的访问密码" \
   -e HTTP_PROXY="http://你的代理地址:端口" \
-  --name my-sora-app \
+  --name sora-downloader \
   sora-downloader
 ```
 
@@ -125,7 +125,7 @@ docker run -d -p 5000:8000 \
 -   `-d`: 后台运行容器。
 -   `-p 5000:8000`: 将你本机的 `5000` 端口映射到容器的 `8000` 端口。你可以将 `5000` 改成任何未被占用的端口。
 -   `-e`: 设置环境变量。
--   `--name my-sora-app`: 为容器指定一个名称，方便管理。
+-   `--name sora-downloader`: 为容器指定一个名称，方便管理。
 
 ### 5. 访问服务
 
