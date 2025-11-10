@@ -1,10 +1,7 @@
 # Sora 视频无水印链接提取器 (Sora Video Downloader Web UI)
 
-这是一个简单易用的 Web 项目，用于从 Sora 分享链接中提取无水印的原始视频下载链接。项目通过 Docker 进行部署，配置简单，支持设置代理和可选的访问令牌保护，并内置了 `access_token` 自动续期机制，可实现长期稳定运行。
-
 <img width="867" height="537" alt="image" src="https://github.com/user-attachments/assets/458b4132-f26e-4fa5-a87b-1c26890403fc" />
 
-*(上图为启用访问令牌时的界面)*
 
 ## ✨ 功能特性
 
